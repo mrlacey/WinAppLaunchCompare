@@ -3,45 +3,53 @@
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:local="clr-namespace:Launcher"
-	Title="MainWindow"
-	Width="800"
+	Title="Launcher"
+	Width="600"
 	Height="450">
-	<StackPanel>
-		<TextBlock Text="Configuration" />
-		<ComboBox x:Name="SelectedConfiguration">
-			<ComboBoxItem Content="Debug" />
-			<ComboBoxItem Content="Release" IsSelected="True" />
-		</ComboBox>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<StackPanel>
+			<TextBlock Text="Configuration" />
+			<ComboBox x:Name="SelectedConfiguration">
+				<ComboBoxItem Content="Debug" />
+				<ComboBoxItem Content="Release" IsSelected="True" />
+			</ComboBox>
 
-		<TextBlock Text="Architecture" />
-		<ComboBox x:Name="SelectedArchitecture">
-			<ComboBoxItem Content="x86" />
-			<ComboBoxItem Content="x64" IsSelected="True" />
-			<ComboBoxItem Content="Arm64" />
-		</ComboBox>
+			<TextBlock Text="Architecture" />
+			<ComboBox x:Name="SelectedArchitecture">
+				<ComboBoxItem Content="x86" />
+				<ComboBoxItem Content="x64" IsSelected="True" />
+				<ComboBoxItem Content="Arm64" />
+			</ComboBox>
 
-		<TextBlock Text="Framework" />
-		<ComboBox x:Name="SelectedFramework">
-			<ComboBoxItem Content="Avalonia" Tag="..\..\..\..\AvaloniaApp\bin\{CONFIG}\net9.0\AvaloniaApp.exe" IsSelected="True" />
-			<ComboBoxItem Content="MAUI" Tag="..\..\..\..\MauiEmptyApp\bin\{CONFIG}\net9.0-windows10.0.19041.0\win10-{ARCH}\MauiEmptyApp.exe" />
-			<ComboBoxItem Content="Uno" Tag="..\..\..\..\UnoApp\UnoApp\bin\{CONFIG}\net9.0-desktop\UnoApp.exe" />
-			<ComboBoxItem Content="WinForms" Tag="..\..\..\..\WinFormsApp\bin\{CONFIG}\net9.0-windows\WinFormsApp.exe" />
-			<ComboBoxItem Content="WinUI" Tag="..\..\..\..\WinUIApp\bin\{ARCH}\{CONFIG}\net9.0-windows10.0.19041.0\win-{ARCH}\WinUIApp.exe" />
-			<ComboBoxItem Content="WPF" Tag="..\..\..\..\WpfApp\bin\{CONFIG}\net9.0-windows\WpfApp.exe" />
-			<ComboBoxItem Content="WPF (Framework)" Tag="..\..\..\..\WpfFrameworkApp\bin\Release\WpfFrameworkApp.exe" />
-		</ComboBox>
+			<TextBlock Text="Framework" />
+			<ComboBox x:Name="SelectedFramework">
+				<ComboBoxItem
+					Content="Avalonia"
+					IsSelected="True"
+					Tag="..\..\..\..\AvaloniaApp\bin\{CONFIG}\net9.0\AvaloniaApp.exe" />
+				<ComboBoxItem Content="MAUI" Tag="..\..\..\..\MauiEmptyApp\bin\{CONFIG}\net9.0-windows10.0.19041.0\win10-{ARCH}\MauiEmptyApp.exe" />
+				<ComboBoxItem Content="Uno" Tag="..\..\..\..\UnoApp\UnoApp\bin\{CONFIG}\net9.0-desktop\UnoApp.exe" />
+				<ComboBoxItem Content="WinForms" Tag="..\..\..\..\WinFormsApp\bin\{CONFIG}\net9.0-windows\WinFormsApp.exe" />
+				<ComboBoxItem Content="WinUI" Tag="..\..\..\..\WinUIApp\bin\{ARCH}\{CONFIG}\net9.0-windows10.0.19041.0\win-{ARCH}\WinUIApp.exe" />
+				<ComboBoxItem Content="WPF" Tag="..\..\..\..\WpfApp\bin\{CONFIG}\net9.0-windows\WpfApp.exe" />
+				<ComboBoxItem Content="WPF (Framework)" Tag="..\..\..\..\WpfFrameworkApp\bin\Release\WpfFrameworkApp.exe" />
+			</ComboBox>
 
-		<Button Click="StartProcessButton_Click" Content="Start Process &amp; Timer" />
+			<Button Click="StartProcessButton_Click" Content="Start Process &amp; Timer" Margin="0,20" />
 
+		</StackPanel>
 		<TextBox
+			Grid.Row="1"
 			Name="OutputTextBox"
-			Height="180"
-			Margin="0,5,0,0"
 			HorizontalScrollBarVisibility="Auto"
 			IsReadOnly="True"
 			TextWrapping="Wrap"
 			VerticalScrollBarVisibility="Auto" />
 
-	</StackPanel>
+	</Grid>
 
 </Window>
