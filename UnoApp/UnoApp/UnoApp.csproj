@@ -1,0 +1,42 @@
+<Project Sdk="Uno.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net9.0-desktop</TargetFrameworks>
+
+    <OutputType>Exe</OutputType>
+    <UnoSingleProject>true</UnoSingleProject>
+
+      <!-- Display name -->
+    <ApplicationTitle>UnoApp</ApplicationTitle>
+    <!-- App Identifier -->
+    <ApplicationId>com.companyname.UnoApp</ApplicationId>
+    <!-- Versions -->
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <ApplicationVersion>1</ApplicationVersion>
+    <!-- Package Publisher -->
+    <ApplicationPublisher>matt</ApplicationPublisher>
+    <!-- Package Description -->
+    <Description>UnoApp powered by Uno Platform.</Description>
+
+    <!--
+      UnoFeatures let's you quickly add and manage implicit package references based on the features you want to use.
+      https://aka.platform.uno/singleproject-features
+    -->
+    <UnoFeatures>
+      SkiaRenderer;
+    </UnoFeatures>
+  </PropertyGroup>
+
+
+    <ItemGroup>
+        <UnoSupportedLanguage Include="en-US" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <UnoXamlResourcesTrimming>true</UnoXamlResourcesTrimming>
+    </PropertyGroup>
+
+    <ItemGroup>
+    <ProjectReference Include="..\..\MessageLib\MessageLib.csproj" />
+  </ItemGroup>
+
+</Project>

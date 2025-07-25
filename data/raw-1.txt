@@ -1,0 +1,167 @@
+Selected framework: Avalonia
+Launched: 1583.5358 ms
+Loaded: 2802.4671 ms
+Launched: 612.1321 ms
+Loaded: 1063.825 ms
+Launched: 522.5526 ms
+Loaded: 964.0777 ms
+Launched: 531.0472 ms
+Loaded: 981.8459 ms
+Launched: 502.9289 ms
+Loaded: 968.4326 ms
+Launched: 557.9696 ms
+Loaded: 981.2608 ms
+Launched: 587.7266 ms
+Loaded: 1072.9407 ms
+Launched: 602.9699 ms
+Loaded: 1034.0079 ms
+Launched: 552.5688 ms
+Loaded: 1087.6704 ms
+Launched: 561.3944 ms
+Loaded: 1031.3555 ms
+
+Selected framework: MAUI
+Launched: 235.7688 ms
+Loaded: 1188.7546 ms
+Launched: 213.004 ms
+Loaded: 1204.6523 ms
+Launched: 207.8275 ms
+Loaded: 1170.7385 ms
+Launched: 215.8052 ms
+Loaded: 1179.5056 ms
+Launched: 225.6615 ms
+Loaded: 1159.6107 ms
+Launched: 209.2778 ms
+Loaded: 1266.1397 ms
+Launched: 217.3388 ms
+Loaded: 1250.1371 ms
+Launched: 225.4965 ms
+Loaded: 1180.0799 ms
+Launched: 213.8045 ms
+Loaded: 1213.6753 ms
+Launched: 229.7432 ms
+Loaded: 1213.7685 ms
+
+Selected framework: Uno
+Launched: 821.4713 ms=
+Loaded: 3977.6554 ms=
+Launched: 56.0501 ms
+Loaded: 1163.7817 ms
+Launched: 53.106 ms
+Loaded: 1197.3051 ms
+Launched: 53.4601 ms
+Loaded: 1159.1223 ms
+Launched: 71.1997 ms
+Loaded: 1193.2251 ms
+Launched: 51.6274 ms
+Loaded: 1194.6341 ms
+Launched: 81.1456 ms
+Loaded: 1309.7116 ms
+Launched: 67.4591 ms
+Loaded: 1202.3653 ms
+Launched: 57.5355 ms=
+Loaded: 1133.4837 ms=
+Launched: 54.3381 ms
+Loaded: 1158.8418 ms
+
+
+Selected framework: WinForms
+Launched: 246.8931 ms
+Loaded: 457.7045 ms
+Launched: 61.6721 ms
+Loaded: 239.1107 ms
+Launched: 60.3531 ms
+Loaded: 271.2166 ms
+Launched: 63.1717 ms
+Loaded: 253.3308 ms
+Launched: 65.4042 ms
+Loaded: 232.103 ms
+Launched: 56.1517 ms
+Loaded: 220.3979 ms
+Launched: 62.7027 ms
+Loaded: 235.9646 ms
+Launched: 58.5977 ms
+Loaded: 252.0543 ms
+Launched: 57.3572 ms
+Loaded: 239.3438 ms
+Launched: 53.8265 ms
+Loaded: 268.1989 ms
+
+Selected framework: WinUI
+Launched: 905.2589 ms
+Loaded: 1151.9107 ms
+Launched: 578.143 ms
+Loaded: 819.2074 ms
+Launched: 555.4713 ms
+Loaded: 826.7905 ms
+Launched: 585.4147 ms
+Loaded: 856.1537 ms
+Launched: 569.9581 ms
+Loaded: 774.6732 ms
+Launched: 646.6805 ms
+Loaded: 873.5977 ms
+Launched: 504.9032 ms
+Loaded: 721.2663 ms
+Launched: 551.3762 ms
+Loaded: 786.8222 ms
+Launched: 542.2231 ms
+Loaded: 767.8654 ms
+Launched: 595.9952 ms
+Loaded: 810.8713 ms
+
+Selected framework: WPF
+Launched: 310.1138 ms
+Loaded: 6682.9067 ms
+Launched: 165.8797 ms
+Loaded: 6391.7446 ms
+Launched: 141.3745 ms
+Loaded: 6561.3695 ms
+Launched: 152.2877 ms
+Loaded: 6303.1824 ms
+Launched: 169.2594 ms
+Loaded: 6443.5859 ms
+Launched: 127.7035 ms
+Loaded: 6314.2323 ms
+Launched: 140.508 ms
+Loaded: 6432.6957 ms
+Launched: 183.0578 ms
+Loaded: 6764.492 ms
+Launched: 140.7627 ms
+Loaded: 6357.8336 ms
+Launched: 151.9409 ms
+Loaded: 6414.1382 ms
+
+Selected framework: WPF (Framework)
+Launched: 730.2792 ms
+Loaded: 7910.3215 ms
+Launched: 77.3015 ms
+Loaded: 7041.9966 ms
+Launched: 82.3414 ms
+Loaded: 6998.2291 ms
+Launched: 77.6645 ms
+Loaded: 7144.7661 ms
+Launched: 77.7121 ms
+Loaded: 7036.4694 ms
+Launched: 76.6828 ms
+Loaded: 6964.8777 ms
+Launched: 77.5515 ms
+Loaded: 6981.3954 ms
+Launched: 87.6175 ms
+Loaded: 6943.0385 ms
+Launched: 76.4491 ms
+Loaded: 7085.9107 ms
+Launched: 88.7395 ms
+Loaded: 7286.1435 ms
+
+
+
+
+
+
+
+
+
+
+
+
+
