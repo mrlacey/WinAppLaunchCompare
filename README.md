@@ -20,7 +20,7 @@ Obviously:
 
 Here are the results of when I ran it.
 
-![Graph of data shown in table below](./assets/image-1.png)
+![Graph of data shown in table below](./assets/image-2.png)
 
 I haven't included the figures in the graph as it's the relative differences that matter. They're below if you really want to see how things performed on the machine I tested on.  
 WPF is _really_ slow, WinForms is fast, everything else is about the same.
@@ -29,22 +29,23 @@ This data is from the Release builds of each app. I launched each app ten times 
 
 Average times (in milliseconds)
 
-| Framework       | Version       | Time |
-|-----------------|---------------|------|
-| Avalonia        | 11.3.0        | 1027 |
-| .NET MAUI       | 9.0.90        | 1199 |
-| Uno Platform    | 6.1.23        | 1196 |
-| Windows Forms   | 9.0           | 248  |
-| WinUI           | 1.7.250606001 | 813  |
-| WPF             | 9.0           | 6449 |
-| WPF (framework) | 4.8.1         | 7064 |
+| Framework       | Version       | Win10 | Win11 x64 | Win11 Arm64 |
+|-----------------|---------------|-------|-----------|-------------|
+| Avalonia        | 11.3.0        | 1027  | 757       | 605         |
+| .NET MAUI       | 9.0.90        | 1199  | 919       | 813         |
+| Uno Platform    | 6.1.23        | 1196  | 776       | 755         |
+| Windows Forms   | 9.0           | 248   | 231       | 137         |
+| WinUI           | 1.7.250606001 | 813   | 308       | 498         |
+| WPF             | 9.0           | 6449  | 524       | 372         |
+| WPF (framework) | 4.8.1         | 7064  | 434       | 629         |
 
 Miscellaneous observations:
 
 - As expected, WinForms was super fast.
-- WPF (both .NET and Framework versions) was surprisingly (disappointingly) slow.
+- WPF (both .NET and Framework versions) was surprisingly (disappointingly) slow on Windows 10. I assume that efforts to optimize launch times didn't include Win10.
 - The difference between MAUI and WinUI is surprising given MAUI uses WinUI to create the Windows version of apps. I expected these to be closer.
 - Of the cross-platform options (and WinUI) the difference is basically irrelevant. Having clicked the button to launch the apps many, many times, I didn't perceive any real difference, never feeling that one was slow or faster than the others.
+- There isn't a consistent performance difference between ARM and X64. ARM based devices have other potential benefits though.
 
 My takeaways:
 
